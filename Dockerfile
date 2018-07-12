@@ -7,4 +7,6 @@ RUN apt-get -y update \
   && add-apt-repository ppa:kivy-team/kivy \ 
   && apt-get install -y python3 python3-kivy python3-pip
 
-ENTRYPOINT ["python3"]
+ENTRYPOINT ["/bin/bash"]
+
+WORKDIR /root
